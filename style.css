@@ -444,6 +444,16 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.service__card-hint {
+  display: block;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--gray1);
+  margin-top: 4px;
+  letter-spacing: 0.02em;
+}
+
 .service__card-text {
   font-size: 14px;
   line-height: 1.9;
