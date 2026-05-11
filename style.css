@@ -297,9 +297,11 @@ ul {
 
 /* --- Philosophy --- */
 .philosophy__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .philosophy__card {
@@ -307,10 +309,6 @@ ul {
   border-radius: var(--radius);
   padding: 32px 28px;
   box-shadow: var(--shadow);
-}
-
-.philosophy__card--wide {
-  grid-column: 1 / -1;
 }
 
 .philosophy__label {
