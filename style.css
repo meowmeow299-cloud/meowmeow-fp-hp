@@ -295,6 +295,82 @@ ul {
   margin-bottom: 0;
 }
 
+/* --- Philosophy --- */
+.philosophy__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.philosophy__card {
+  background: var(--bg-gray);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--shadow);
+}
+
+.philosophy__card--wide {
+  grid-column: 1 / -1;
+}
+
+.philosophy__label {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 8px;
+}
+
+.philosophy__heading {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.philosophy__text {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--gray1);
+}
+
+.philosophy__values {
+  list-style: none;
+}
+
+.philosophy__values li {
+  margin-bottom: 12px;
+  padding-left: 16px;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.philosophy__values li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+}
+
+.philosophy__values li:last-child {
+  margin-bottom: 0;
+}
+
+.philosophy__value-title {
+  font-weight: 700;
+  color: var(--green);
+}
+
+.philosophy__value-desc {
+  color: var(--gray1);
+}
+
 /* --- Problems --- */
 .problems__list {
   display: grid;
@@ -782,6 +858,11 @@ details[open] .faq__toggle::after {
   .section__title {
     font-size: 22px;
     margin-bottom: 36px;
+  }
+
+  /* Philosophy mobile */
+  .philosophy__grid {
+    grid-template-columns: 1fr;
   }
 
   /* Problems mobile */
